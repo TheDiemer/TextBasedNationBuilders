@@ -13,20 +13,20 @@ name= {
 Description= ''
 
 Gov_names= [
-  'Plutocracy',
-  'Technocracy',
-  'Meritocracy',
-  'Kraterocracy',
-  'Autocracy',
-  'Oligarchy',
-  'Absolute monarchy',
-  'Constitutional monarchy',
-  'Bankocracy',
-  'Corporatocracy',
-  'Nepotocracy',
-  'Kakistocracy',
-  'Democracy',
-  'Republic' 
+  'plutocracy',
+  'technocracy',
+  'meritocracy',
+  'kraterocracy',
+  'autocracy',
+  'oligarchy',
+  'absolute monarchy',
+  'constitutional monarchy',
+  'bankocracy',
+  'corporatocracy',
+  'nepotocracy',
+  'kakistocracy',
+  'democracy',
+  'republic' 
 ]
 
 Gov_defs= [
@@ -45,3 +45,29 @@ Gov_defs= [
   'Rule by a form of government in which all the people of a state or polity are involved in making decisions about its affairs.',
   'Rule by a form of government in which the people, or some significant portion of them, have supreme control over the government and where offices of state are elected or chosen by elected people.'
 ]
+
+Stats= [
+  'Military',
+  'Science',
+  'Food',
+  'Employment',
+  'Culture',
+  'Money'
+]
+
+Gov_stats= {
+  'plutocracy':              ['5','5','5','5','5'],
+  'technocracy':             ['5','5','5','5','5'],
+  'meritocracy':             ['5','5','5','5','5'],
+  'kraterocracy':            ['5','5','5','5','5'],
+  'autocracy':               ['5','5','5','5','5'],
+  'oligarchy':               ['5','5','5','5','5'],
+  'absolute monarchy':       ['5','5','5','5','5'],
+  'constitutional monarchy': ['5','5','5','5','5'],
+  'bankocracy':              ['5','5','5','5','5'],
+  'corporatocracy':          ['5','5','5','5','5'],
+  'nepotocracy':             ['5','5','5','5','5'],
+  'kakistocracy':            ['5','5','5','5','5'],
+  'democracy':               ['5','5','5','5','5'],
+  'republic':                ['5','5','5','5','5'] 
+}
