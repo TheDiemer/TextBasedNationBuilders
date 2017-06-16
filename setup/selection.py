@@ -1,6 +1,5 @@
 #!/bin/python3
 from setup import info
-import random
 
 def selection():
   print("\nI am now going to list off the full list of starting Governments that you can choose to start as.\nIf you need a definitition of any of them (or details of their starting Stats),  please type \'Help\' and hit Enter, or add a government after \'Help\' to learn about that specific one \'Help Kraterocracy\', otherwise please type the name of the Government type you would like to start with!\n")
