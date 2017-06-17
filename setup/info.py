@@ -47,27 +47,27 @@ Gov_defs= [
 ]
 
 Stats= [
-  'Military',
-  'Science',
-  'Food',
-  'Employment',
   'Culture',
-  'Money'
+  'Employment',
+  'Food',
+  'Military',
+  'Money',
+  'Science'
 ]
 
 Gov_stats= {
-  'plutocracy':              ['5','5','5','5','5'],
-  'technocracy':             ['5','5','5','5','5'],
-  'meritocracy':             ['5','5','5','5','5'],
-  'kraterocracy':            ['5','5','5','5','5'],
-  'autocracy':               ['5','5','5','5','5'],
-  'oligarchy':               ['5','5','5','5','5'],
-  'absolute monarchy':       ['5','5','5','5','5'],
-  'constitutional monarchy': ['5','5','5','5','5'],
-  'bankocracy':              ['5','5','5','5','5'],
-  'corporatocracy':          ['5','5','5','5','5'],
-  'nepotocracy':             ['5','5','5','5','5'],
-  'kakistocracy':            ['5','5','5','5','5'],
-  'democracy':               ['5','5','5','5','5'],
-  'republic':                ['5','5','5','5','5'] 
+  'plutocracy':              [5,5,7,5,5,5],
+  'technocracy':             [5,5,5,5,5,5],
+  'meritocracy':             [5,5,5,5,5,5],
+  'kraterocracy':            [5,5,5,5,5,5],
+  'autocracy':               [5,5,5,5,5,5],
+  'oligarchy':               [5,5,5,5,5,5],
+  'absolute monarchy':       [5,5,5,5,5,5],
+  'constitutional monarchy': [5,5,5,5,5,5],
+  'bankocracy':              [5,5,5,5,5,5],
+  'corporatocracy':          [5,5,5,5,5,5],
+  'nepotocracy':             [5,5,5,5,5,5],
+  'kakistocracy':            [5,5,5,5,5,5],
+  'democracy':               [5,5,5,5,5,5],
+  'republic':                [5,5,5,5,5,5] 
 }
