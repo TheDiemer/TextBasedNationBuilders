@@ -12,62 +12,34 @@ name= {
 
 Description= ''
 
-Gov_names= [
-  'plutocracy',
-  'technocracy',
-  'meritocracy',
-  'kraterocracy',
-  'autocracy',
-  'oligarchy',
-  'absolute monarchy',
-  'constitutional monarchy',
-  'bankocracy',
-  'corporatocracy',
-  'nepotocracy',
-  'kakistocracy',
-  'democracy',
-  'republic' 
-]
-
-Gov_defs= [
-  'Rule by the wealthy; a system wherein governance is indebted to, dependent upon or heavily influenced by the desires of the rich.', 
-  'Rule by the educated and/or technical experts; a system of governance where people who are skilled or proficient govern in their respective areas of expertise in technology would be in control of all decision making.', 
-  'Rule by the meritorious; a system of governance where groups are selected on the basis of people\'s ability, knowledge in a given area, and contributions to society.', 
-  'Rule by the strong; a system of governance where those who are strong enough seize power through physical force, social maneuvering or political cunning.',
-  'Power resides in the hands of one single person.',
-  'Rule by a small number of people. Not based on class.',
-  'A traditional and historical system where the monarch exercises ultimate governing authority as head of state and head of government.',
-  'The monarch\'s powers are limited by law or by a formal constitution, usually assigning them to those of the head of state.',
-  'Rule by banks; a system of governance with excessive power or influence of banks and other financial authorities on public policy-making.',
-  'Rule by corporations; a system of governance where an economic and political system is controlled by corporations or corporate interests.',
-  'Rule by nephews; favouritism granted to relatives regardless of merit; a system of governance in which importance is given to the relatives of those already in power, like a nephew (where the word comes from).',
-  'Rule by the stupid; a system of governance where the worst or least-qualified citizens govern or dictate policies.',
-  'Rule by a form of government in which all the people of a state or polity are involved in making decisions about its affairs.',
-  'Rule by a form of government in which the people, or some significant portion of them, have supreme control over the government and where offices of state are elected or chosen by elected people.'
-]
-
-Stats= [
-  'Culture',
-  'Employment',
-  'Food',
-  'Military',
-  'Money',
-  'Science'
-]
-
-Gov_stats= {
-  'plutocracy':              [5,5,7,5,5,5],
-  'technocracy':             [5,5,5,5,5,5],
-  'meritocracy':             [5,5,5,5,5,5],
-  'kraterocracy':            [5,5,5,5,5,5],
-  'autocracy':               [5,5,5,5,5,5],
-  'oligarchy':               [5,5,5,5,5,5],
-  'absolute monarchy':       [5,5,5,5,5,5],
-  'constitutional monarchy': [5,5,5,5,5,5],
-  'bankocracy':              [5,5,5,5,5,5],
-  'corporatocracy':          [5,5,5,5,5,5],
-  'nepotocracy':             [5,5,5,5,5,5],
-  'kakistocracy':            [5,5,5,5,5,5],
-  'democracy':               [5,5,5,5,5,5],
-  'republic':                [5,5,5,5,5,5] 
-}
+def creation(Govt):
+  plutocracy = Govt('plutocracy', 'Rule by the wealthy; a system wherein governance is indebted to, dependent upon or heavily influenced by the desires of the rich.', {'Culture':5,'Employment':5,'Food':6,'Military':5,'Money':7,'Science':5})
+  technocracy = Govt('technocracy', 'Rule by the educated and/or technical experts; a system of governance where people who are skilled or proficient govern in their respective areas of expertise in technology would be in control of all decision making.', {'Culture':6,'Employment':8,'Food':6,'Military':3,'Money':5,'Science':10})
+  meritocracy = Govt('meritocracy', 'Rule by the meritorious; a system of governance where groups are selected on the basis of people\'s ability, knowledge in a given area, and contributions to society.', {'Culture':7,'Employment':7,'Food':5,'Military':6,'Money':5,'Science':6})
+  kraterocracy = Govt('kraterocracy', 'Rule by the strong; a system of governance where those who are strong enough seize power through physical force, social maneuvering or political cunning.', {'Culture':2,'Employment':4,'Food':4,'Military':10,'Money':5,'Science':3})
+  autocracy = Govt('autocracy', 'Power resides in the hands of one single person.', {'Culture':3,'Employment':3,'Food':3,'Military':5,'Money':3,'Science':3})
+  oligarchy = Govt('oligarchy', 'Rule by a small number of people. Not based on class.', {'Culture':5,'Employment':4,'Food':5,'Military':6,'Money':4,'Science':5})
+  absoluteMon = Govt('absolute monarchy', 'A traditional and historical system where the monarch exercises ultimate governing authority as head of state and head of government.', {'Culture':7,'Employment':4,'Food':5,'Military':6,'Money':6,'Science':3})
+  constitutionalMon = Govt('constitutional monarchy', 'The monarch\'s powers are limited by law or by a formal constitution, usually assigning them to those of the head of state.', {'Culture':7,'Employment':5,'Food':5,'Military':7,'Money':6,'Science':3})
+  bankocracy = Govt('bankocracy', 'Rule by banks; a system of governance with excessive power or influence of banks and other financial authorities on public policy-making.', {'Culture':4,'Employment':8,'Food':5,'Military':5,'Money':10,'Science':4})
+  corporatocracy = Govt('corporatocracy', 'Rule by corporations; a system of governance where an economic and political system is controlled by corporations or corporate interests.', {'Culture':3,'Employment':8,'Food':6,'Military':7,'Money':9,'Science':3})
+  nepotocracy = Govt('nepotocracy', 'Rule by nephews; favouritism granted to relatives regardless of merit; a system of governance in which importance is given to the relatives of those already in power, like a nephew (where the word comes from).', {'Culture':5,'Employment':5,'Food':5,'Military':5,'Money':5,'Science':5})
+  kakistocracy = Govt('kakistocracy', 'Rule by the stupid; a system of governance where the worst or least-qualified citizens govern or dictate policies.', {'Culture':4,'Employment':5,'Food':7,'Military':2,'Money':3,'Science':1})
+  democracy = Govt('democracy', 'Rule by a form of government in which all the people of a state or polity are involved in making decisions about its affairs.', {'Culture':5,'Employment':5,'Food':5,'Military':5,'Money':5,'Science':5})
+  republic = Govt('republic', 'Rule by a form of government in which the people, or some significant portion of them, have supreme control over the government and where offices of state are elected or chosen by elected people.', {'Culture':5,'Employment':5,'Food':5,'Military':5,'Money':5,'Science':5})
+  options = [plutocracy, technocracy, meritocracy, kraterocracy, autocracy, oligarchy, absoluteMon, constitutionalMon, bankocracy, corporatocracy, nepotocracy, kakistocracy, democracy, republic]
+  yield options
+  yield plutocracy
+  yield technocracy
+  yield meritocracy
+  yield kraterocracy
+  yield autocracy
+  yield oligarchy
+  yield absoluteMon
+  yield constitutionalMon
+  yield bankocracy
+  yield corporatocracy
+  yield nepotocracy
+  yield kakistocracy
+  yield democracy
+  yield republic
