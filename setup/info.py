@@ -28,6 +28,11 @@ def creation(Govt):
   democracy = Govt('democracy', 'Rule by a form of government in which all the people of a state or polity are involved in making decisions about its affairs.', {'Culture':5,'Employment':5,'Food':5,'Military':5,'Money':5,'Science':5})
   republic = Govt('republic', 'Rule by a form of government in which the people, or some significant portion of them, have supreme control over the government and where offices of state are elected or chosen by elected people.', {'Culture':5,'Employment':5,'Food':5,'Military':5,'Money':5,'Science':5})
   options = [plutocracy, technocracy, meritocracy, kraterocracy, autocracy, oligarchy, absoluteMon, constitutionalMon, bankocracy, corporatocracy, nepotocracy, kakistocracy, democracy, republic]
+  list_of_names = []
+  #months = set(month.lower() for month in ("January", "February", "March", "April","May", "June", "July"))
+  list_of_names = set(options[names].name.lower() for names in range(0, len(options)))
+  #for names in range(0, len(options)):
+  #  list_of_names.append(options[names].name.lower())
   yield options
   yield plutocracy
   yield technocracy
@@ -43,3 +48,4 @@ def creation(Govt):
   yield kakistocracy
   yield democracy
   yield republic
+  yield list_of_names

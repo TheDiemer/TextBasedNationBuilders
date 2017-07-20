@@ -8,14 +8,18 @@ class Govt(object):
     self.stats = stats
 
 def main():
-  options, plutocracy, technocracy, meritocracy, kraterocracy, autocracy, oligarchy, absoluteMon, consitutionalMon, bankocracy, corporatocracy, nepotocracy, kakistocracy, democracy, republic = info.creation(Govt)
-  print(plutocracy.name)
-  print(plutocracy.definition)
-  for thing in range(0, len(options)):
-    print(options[thing].name)
-    print(options[thing].stats)
-  #start.start()
-  #playinggovt = selection.selection(Govt)
+  #options, plutocracy, technocracy, meritocracy, kraterocracy, autocracy, oligarchy, absoluteMon, consitutionalMon, bankocracy, corporatocracy, nepotocracy, kakistocracy, democracy, republic = info.creation(Govt)
+  #print(plutocracy.name)
+  #print(plutocracy.definition)
+  #print(plutocracy.stats.get('Food'))
+  #plutocracy.stats['Food'] = 7
+  #print(plutocracy.stats.get('Food'))
+  #for thing in range(0, len(options)):
+  #  print(options[thing].name)
+  #  print(options[thing].stats)
+  start.start()
+  playingGovt = selection.selection(Govt)
+  selection.printTypeDefStats(playingGovt)
 
 if __name__ == "__main__":
   main()
