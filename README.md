@@ -1,5 +1,5 @@
 # TextBasedNationBuilders
-Text Based version of a [game](https://thediemer.itch.io/the-universe-hates-you-v1) that I worked on for a class during my senior year of college.o
+Text Based version of a [game](https://thediemer.itch.io/the-universe-hates-you-v1) that I worked on for a class during my senior year of college.
 
 The game originally started as Nation Builders with lots of events being positive, building events. However, during the development, we encountered several issues with Unity Game engine that caused a lot of very unusual bugs including one that caused the planet that spins in the center of the screen to go spinning off the screen. After seeing several of these we decided to change the name to The Universe Hates You and the focus to be much more negative. Below is the description of the final result that we presented at the end of the semester:
 
