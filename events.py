@@ -4,7 +4,7 @@ import random
 def selectEvent(govt, turn):
   eventlist = [ai, crop_surplus, job_surplus, plague, renaissance, asteroid, natural_disaster, new_city, scandal]
   print("SEASON {0}".format(turn))
-  print(random.choice(eventlist)(govt.stats))
+  return random.choice(eventlist)(govt.stats)
 
 def ai(stats):
   result = None
