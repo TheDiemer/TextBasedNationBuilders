@@ -8,10 +8,40 @@ class Govt(object):
     self.definition = definition
     self.stats = stats
 
-class GameStats(object):
-  def __init__(self, tier1 = {}, tier2 = {}):
-    self.tier1 = tier1
-    self.tier2 = tier2
+class GamePubStats(object):
+  def __init__(self, Money, Perception, Population):
+    self.Money = Money
+    self.Perception = Perception
+    self.Population = Population
+
+class GamePrivStats(object):
+  def __init__(self, Happiness, Env_Health, Education, Industry, Pop_growth):
+    self.Happiness = Happiness
+    self.Env_Health = Env_Health
+    self.Education = Education
+    self.Industry = Industry
+    self.Pop_growth = Pop_growth
+
+def Rules():
+  Govt_stat_changes= {
+    'culture is changed when happiness, education, and money change',
+    'employment is changed when industry, education, and money change. And when employment changes, so does happiness',
+    'food is changed when env_health, industry, and money change. And when food changes, so does happiness and pop_growth',
+    'military is changed when industry, science, and money change. And when military changes, so does happiness',
+    'science is changed when education and money change. And when science changes, so does industry and env_health'
+  }
+  GamePubStats_changes = {
+    '',
+    '',
+    ''
+  }
+  GamePrivStats_changes = {
+    '',
+    '',
+    '',
+    '',
+    ''
+  }
 
 def main():
   #options, plutocracy, technocracy, meritocracy, kraterocracy, autocracy, oligarchy, absoluteMon, consitutionalMon, bankocracy, corporatocracy, nepotocracy, kakistocracy, democracy, republic, list_of_names= info.creation(Govt)
