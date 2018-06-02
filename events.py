@@ -3,7 +3,7 @@ import random
 
 def selectEvent(govt, turn):
   eventlist = [ai, crop_surplus, job_surplus, plague, renaissance, asteroid, natural_disaster, new_city, scandal]
-  print("SEASON {0}".format(turn))
+  print("\033cSEASON {0}".format(turn+1))
   return random.choice(eventlist)(govt.stats)
 
 def ai(stats):

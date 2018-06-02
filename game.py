@@ -31,16 +31,16 @@ def Rules():
     'science is changed when education and money change. And when science changes, so does industry and env_health'
   }
   GamePubStats_changes = {
-    '',
-    '',
-    ''
+    'money is changed when perception and industry change. And when money changes, so does happiness',
+    'perception is changed when happiness, env_health, and education change. And when perception changes, so does money',
+    'population is changed when pop_growth, happiness, and env_health change. And when population changes, nothing else does'
   }
   GamePrivStats_changes = {
-    '',
-    '',
-    '',
-    '',
-    ''
+    'happiness is changed when env_health, education, industry, and money change. And when happiness changes, so does perception, population, and pop_growth',
+    'env_health is changed when education and pop_growth change. And when env_health changes, so does industry, happiness, pop_growth, perception, population',
+    'education is changed when nothing change. And when education changes, so does env_health, industry, perception, and happiness',
+    'industry is changed when env_health and education change. And when industry changes, so does money and happiness',
+    'pop_growth is changed when env_health and happiness change. And when pop_growth changes, so does population and env_health'
   }
 
 def main():
@@ -56,10 +56,10 @@ def main():
   start.start()
   playingGovt = selection.selection(Govt)
   #selection.printTypeDefStats(playingGovt)
-  turn = 1
+  turn = 0
   maxTurn = 5
   response = None
-  while turn <= maxTurn:
+  while turn < maxTurn:
     #if response != None:
     #  print("You said {0}".format(response))
     response = input(events.selectEvent(playingGovt, turn) + "\n")
